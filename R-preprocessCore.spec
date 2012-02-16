@@ -13,6 +13,8 @@ Requires:         R-methods
 Requires:         R-stats 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods
 BuildRequires:    R-stats 
+BuildRequires:    blas-devel
+BuildRequires:    lapack-devel
 
 %description
 A library of core preprocessing routines
