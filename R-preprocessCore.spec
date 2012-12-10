@@ -9,9 +9,10 @@ Group:            Sciences/Mathematics
 License:          LGPL (>= 2)
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
-Requires:         R-methods R-stats 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex
-BuildRequires:    R-methods R-stats
+Requires:         R-methods 
+Requires:         R-stats 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods
+BuildRequires:    R-stats 
 BuildRequires:    blas-devel
 BuildRequires:    lapack-devel
 
@@ -43,3 +44,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/include
 %{rlibdir}/%{packname}/libs
+
+
+%changelog
+* Fri Feb 17 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.16.0-1
++ Revision: 775543
+- Import R-preprocessCore
+- Import R-preprocessCore
+
