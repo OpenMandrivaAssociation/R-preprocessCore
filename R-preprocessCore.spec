@@ -2,13 +2,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          1.16.0
+Version:          1.20.0
 Release:          1
 Summary:          A collection of pre-processing functions
 Group:            Sciences/Mathematics
 License:          LGPL (>= 2)
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
-Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/preprocessCore_1.20.0.tar.gz
 Requires:         R-methods 
 Requires:         R-stats 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods
@@ -44,11 +44,3 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/include
 %{rlibdir}/%{packname}/libs
-
-
-%changelog
-* Fri Feb 17 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.16.0-1
-+ Revision: 775543
-- Import R-preprocessCore
-- Import R-preprocessCore
-
