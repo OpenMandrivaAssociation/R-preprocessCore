@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          1.22.0
-Release:          1
+Release:          2
 Summary:          A collection of pre-processing functions
 Group:            Sciences/Mathematics
 License:          LGPL (>= 2)
