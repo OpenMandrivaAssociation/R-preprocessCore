@@ -7,7 +7,7 @@ Release:          2
 Summary:          A collection of pre-processing functions
 Group:            Sciences/Mathematics
 License:          LGPL (>= 2)
-URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
+URL:              https://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/preprocessCore_1.22.0.tar.gz
 Requires:         R-methods 
 Requires:         R-stats 
