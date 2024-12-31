@@ -1,26 +1,27 @@
-%global packname  preprocessCore
-%global rlibdir  %{_libdir}/R/library
+%global packname	preprocessCore
+%global rlibdir	%{_libdir}/R/library
 
-Name:             R-%{packname}
-Version:          1.22.0
-Release:          2
-Summary:          A collection of pre-processing functions
-Group:            Sciences/Mathematics
-License:          LGPL (>= 2)
-URL:              https://bioconductor.org/packages/release/bioc/html/%{packname}.html
-Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/preprocessCore_1.22.0.tar.gz
-Requires:         R-methods 
-Requires:         R-stats 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods
-BuildRequires:    R-stats 
-BuildRequires:    blas-devel
-BuildRequires:    lapack-devel
+# BLAS lib
+%global blaslib flexiblas
 
+Name:		R-%{packname}
+Version:	1.68.0
+Release:	1
+Summary:	A collection of pre-processing functions
+Group:		Sciences/Mathematics
+License:	LGPL (>= 2)
+URL:		https://bioconductor.org/packages/release/bioc/html/%{packname}.html
+Source0:	https://bioconductor.org/packages/release/bioc/src/contrib/preprocessCore_%{version}.tar.gz
+Requires:	R-methods
+Requires:	R-stats
+BuildRequires:	R-devel Rmath-devel texlive-collection-latex R-methods
+BuildRequires:	R-stats
+BuildRequires:	pkgconfig(%{blaslib})
 %description
 A library of core preprocessing routines
 
 %prep
-%setup -q -c -n %{packname}
+%autosetup -c -n %{packname}
 
 %build
 
